@@ -11,7 +11,7 @@ int main() {
 	scanf("%lf", &num2);
 	printf("Insira um valor para c: ");
 	scanf("%lf", &num3);
-	delta = num2 * num2 - 4 * num1 * num3;
+	delta = pow(num2,2) - 4 * num1 * num3;
 	if (num1 == 0 && delta < 0 )
 		printf("Impossível calcular\n");
 	else{
@@ -20,4 +20,3 @@ int main() {
 			printf("X2 =  %.5lf\n", G); 
 					}
 }
-
