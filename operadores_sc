@@ -6,7 +6,7 @@ int main(){
     int opcao;
     int n1, n2, result;
 	printf("Selecione sua opcao: \n");
-	printf("1. Soma\n2. Produto Notavel\n3. Quadrado primeiro\n4. Raiz da soma\n5");
+	printf("1 - Soma dos numeros\n2 - O produto do primeiro pelo quadrado do segundo\n3 - O quadrado do primeiro\n4 - A raiz quadrada da soma dos quadrados\n");
 	scanf("%d", &opcao);
 	printf("Deposite aqui seu valor inteiro: ");
 	scanf("%d", &n1);
@@ -18,7 +18,7 @@ int main(){
 		printf("%d", result);
 	break;
 	case 2:
-	    result = n1 + 2 * n1 * n2 + n2;
+	    result = n1 * pow(n2, 2);
 	    printf("%d", result);
 	break;
 	case 3:
